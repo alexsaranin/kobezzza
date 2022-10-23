@@ -7,7 +7,8 @@
     "build": "npx tsc",
     "lesson_1_task_1": "npm run build && node dist/lesson_1/task_1.js",
     "lesson_1_task_1.1": "npm run build && node dist/lesson_1/task_1_1.js",
-    "lesson_1_task_2": "npm run build && node dist/lesson_1/task_2.js"
+    "lesson_1_task_2": "npm run build && node dist/lesson_1/task_2.js",
+    "lesson_1_task_3": "npm run build && node dist/lesson_1/task_3.js"
   },
   "repository": {
     "type": "git",
