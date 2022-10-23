@@ -37,12 +37,6 @@ function Structure(props: string[]) {
     };
 }
 
-interface Props {
-    name: string;
-    lastName: string;
-    age: number
-}
-
 const jackBlack = Structure(['name', 'lastName', 'age']);
 
 jackBlack.set('name', 'Jack');
