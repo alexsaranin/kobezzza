@@ -1,3 +1,5 @@
+export {}
+
 /** Оценка
  * 1.       30 min      40 min (JS)     +5 min (TS)
  * 1.1.     30 min
@@ -52,13 +54,15 @@ function LinkedList() {
                 return;
             }
 
-            const prevLast = last;
+            const prevLast: LinkedItem = last as LinkedItem;
 
             last = {
                 value,
                 prev: prevLast,
                 next: null
             };
+
+            prevLast.next = last;
         }
     };
 }
@@ -72,5 +76,6 @@ list.add(3);
 
 console.log(list.first?.value);             // 1
 console.log(list.last?.value);              // 3
+console.log(list.first?.next?.next?.value); // 3
 console.log(list.first?.next?.value);       // 2
 console.log(list.first?.next?.prev?.value); // 1
