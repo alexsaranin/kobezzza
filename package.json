@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc src/**/*.ts --target es6",
-    "lesson_1": "npm run build && node src/lesson_1/index.js"
+    "build": "npx tsc",
+    "lesson_1": "npm run build && node dist/lesson_1/task_1.js",
+    "lesson_1_1": "npm run build && node dist/lesson_1/task_1_1.js"
   },
   "repository": {
     "type": "git",
