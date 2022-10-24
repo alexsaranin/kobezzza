@@ -67,7 +67,6 @@ function LinkedList() {
     };
 }
 
-
 const list = LinkedList();
 
 list.add(1);
